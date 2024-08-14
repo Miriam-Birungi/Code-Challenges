@@ -1,12 +1,12 @@
-function checkDuplicates(nums) {
-    const seen = new Set();
-    for (const num of nums) {
-        if(seen.has(num)){
+function duplicateNums(nums){
+    const digits = new set();
+    for (const number of nums){
+        if(digits.has(number)){
             return true;
         }
-        seen.add(num);
+        digits.add(number);
     }
     return false;
 }
 
-checkDuplicates([1,2,4,1]);
+duplicateNums([1,2,4,5,6,1]);
